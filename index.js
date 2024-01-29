@@ -16,7 +16,6 @@ async function checkweather(city) {
     console.log(data.weather[0].main);
     const weatherIcon = data.weather[0].main;
     $(".weather-icon").attr("src","/images/"+ weatherIcon + ".png");
-
 }
 $(searchBtn).click(function() {
    var city = $(searchkBox).val();
